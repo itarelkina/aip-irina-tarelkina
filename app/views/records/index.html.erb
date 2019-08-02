@@ -1,0 +1,45 @@
+<p>
+  Download:
+  <%= link_to "CSV", records_path(format: "csv") %>
+
+</p>
+<h2>Import Records</h2>
+<p>
+
+<table><th>Steps:</th>
+<td>1. Prepare CSV file with records.</td>
+<td>2. Click "Choose File".</td>
+<td>3. Click "Import"</td>
+</table>
+</p>
+<p>
+<%= form_tag import_records_path, multipart: true do %>
+  <%= file_field_tag :file %>
+  <%= submit_tag "Import" %>
+<% end %>
+</p>
+<h1>Records</h1>
+<table id="records">
+  <tr>
+    <th>letter_id</th>
+    <th>name</th>
+    <th>unit_value</th>
+    <th>quantity</th>
+    <th>template</th>
+    <th>user_id</th>  
+  </tr>
+<% @records.each do |record| %>
+  <tr>
+    <td><%= record.letter_id %></td>
+    <td><%= record.name %></td>
+    <td><%= record.unit_value %></td>
+    <td><%= record.quantity %></td>
+    <td><%= record.template %></td>
+    <td><%= record.user_id %></td>
+
+  </tr>
+<% end %>
+</table>
+
+
+

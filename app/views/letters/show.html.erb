@@ -1,0 +1,23 @@
+<h1>Letter #<%= @letter.letter_number %></h1>
+<table id="records">
+  <tr>
+    <th>AIP </th>
+    <th>Qty</th>
+    <th class="price">Unit Price</th>
+    <th class="price">Full Price</th>
+  </tr>
+  <% @letter.records.each do |record| %>
+    <tr class="<%= cycle :odd, :even %>">
+      <td><%= record.name %></td>
+      <td class="qty"><%= record.quantity %></td>
+      <td class="price"><%= number_to_currency(record.unit_value) %></td>
+      <td class="price"><%= number_to_currency(record.full_price) %></td>
+    </tr>
+  <% end %>
+  <tr>
+    <td class="total price" colspan="4">
+      Total: <%= number_to_currency @letter.total_price %>
+    </td>
+  </tr>
+</table>
+<p><%= link_to "Printable Letter (PDF)", letter_path(@letter, format: "pdf") %></p>
