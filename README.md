@@ -6,7 +6,7 @@ Worked on solo software development project building a pdf generated letters.
 In my project I used the following API
 gem 'prawn'
 gem 'prawn-rails'
-to generate letter in PDF bycreating template.
+to generate letter in PDF by creating template.
 
 Used the following API to import records for letter to CSV, to export records from CSV.
 gem 'csv'
