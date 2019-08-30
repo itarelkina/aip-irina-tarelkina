@@ -1,7 +1,18 @@
 * Ruby version
 ruby '2.5.3'
 
-Worked on Agile solo software development project building a pdf generated letters. Under the guidance of a senior software engineer, I had weekly Agile meetings for code reviews, sprint planning, and feature assignments.
+Worked on solo software development project building a pdf generated letters. 
 
+In my project I used the following API
+gem 'prawn'
+gem 'prawn-rails'
+to generate letter in PDF bycreating template.
 
+Used the following API to import records for letter to CSV, to export records from CSV.
+gem 'csv'
+gem 'roo'
+gem 'iconv'
+
+Used gem 'devise' to set up users loging and security.
+gem 'devise'
 <img src="screenshot.png" alt="Blog Screenshot">
