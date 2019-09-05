@@ -15,4 +15,8 @@ gem 'iconv'
 
 Used gem 'devise' to set up users loging and security.
 gem 'devise'
+
+Deployed in Heroku:
+https://aip-irina-tarelkina.herokuapp.com
+
 <img src="screenshot.png" alt="Blog Screenshot">
