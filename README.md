@@ -1,7 +1,10 @@
 * Ruby version
 ruby '2.5.3'
 
-Worked on solo software development project building a pdf generated letters. 
+AIP is a project to automate the manual process to generate Annual Incentive Payment letters for employees in pdf using web application.
+Core responsibilities were to build a new application to automate the letter generation process in PDF format, used TDD approach.
+Tools / languages used: HTML5, CSS3, Ruby, Rails, Visual Studio Code, PostgreSQL, used TDD approach.
+
 
 In my project I used the following API
 gem 'prawn'
@@ -16,7 +19,7 @@ gem 'iconv'
 Used gem 'devise' to set up users loging and security.
 gem 'devise'
 
-Deployed in Heroku:
+Deployed project in Heroku:
 https://aip-irina-tarelkina.herokuapp.com
 
 <img src="screenshot.png" alt="Blog Screenshot">
